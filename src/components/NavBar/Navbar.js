@@ -18,30 +18,34 @@ function Navbar() {
 
   return (
     <div>
-      <nav className='navbarX sticky'>
-        <a href="" className='navbar-logoX' onClick={closeMobileMenu}>
+      <nav className="navbarX sticky">
+        <a href="" className="navbar-logoX" onClick={closeMobileMenu}>
           {navbar_name}
         </a>
-        <div className='menu-iconX' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        <div className="menu-iconX" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? 'nav-menuX activeX' : 'nav-menuX'}>
-          <li className='nav-itemX'>
-            <Link to='/' className='nav-linksX' onClick={() => closeMobileMenu("#main")}>
+        <ul className={click ? "nav-menuX activeX" : "nav-menuX"}>
+          <li className="nav-itemX">
+            <Link
+              to="/"
+              className="nav-linksX"
+              onClick={() => closeMobileMenu("#main")}
+            >
               Home
             </Link>
           </li>
+       
 
-          <li className='nav-itemX'>
+     <li className="nav-itemX">
             <Link
-              to='/'
-              className='nav-linksX'
+              to="/"
+              className="nav-linksX"
               onClick={() => closeMobileMenu("#aboutme")}
             >
               About Me
             </Link>
           </li>
-
           <li className="nav-itemX">
             <Link
               to="/"
@@ -52,31 +56,28 @@ function Navbar() {
             </Link>
           </li>
 
-
-          <li className='nav-itemX'>
+          <li className="nav-itemX">
             <Link
-              to='/s'
-              className='nav-linksX'
+              to="/s"
+              className="nav-linksX"
               onClick={() => closeMobileMenu("#projects")}
             >
               Projects
             </Link>
           </li>
-          <li className='nav-itemX'>
+          <li className="nav-itemX">
             <Link
-              to='/s'
-              className='nav-linksX'
+              to="/s"
+              className="nav-linksX"
               onClick={() => closeMobileMenu("#contact")}
             >
               Contact Me
             </Link>
           </li>
-          
-
         </ul>
-
       </nav>
-    </div>)
+    </div>
+  );
 }
 
 export default Navbar;

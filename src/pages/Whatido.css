@@ -1,7 +1,7 @@
 .Whatido-title {
   color: var(--txtcolor);
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: -80px;
 }
 
 .fullstack {
@@ -60,6 +60,9 @@
 div.logo {
   margin-right: 95px;
   margin-left: 95px;
+}
+.fluid-container{
+  margin-top:-15px;
 }
 
 #whatido .box {
